@@ -260,7 +260,7 @@ def update_level():
 
 def main():
     # Set page config
-    st.set_page_config(page_title="Jack's Investment Game", layout="wide")
+    st.set_page_config(page_title="Money Management Mastery", layout="wide")
 
     # Initialize all session state variables
     if 'balance' not in st.session_state:
@@ -305,7 +305,7 @@ def main():
     
     page = st.sidebar.radio("Navigate", list(nav_options.keys()), format_func=lambda x: f"{nav_options[x]} {x}")
 
-    st.title("Jack's Investment Game")
+    st.title("Money Management Mastery")
 
     # Handle daily login streak
     current_date = datetime.now().date()
